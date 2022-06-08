@@ -1,0 +1,25 @@
+.content-6 {
+  padding: 120px 30px;
+  background-color: $primary-blue;
+
+  .text {
+    text-align: center;
+    color: $secondary-blue;
+    max-width: 700px;
+    margin: auto;
+
+    i {
+      font-size: 60px;
+    }
+
+    h3 {
+      text-transform: uppercase;
+      margin: 20px 0;
+      font-weight: normal;
+    }
+
+    p {
+      margin: 0;
+    }
+  }
+}

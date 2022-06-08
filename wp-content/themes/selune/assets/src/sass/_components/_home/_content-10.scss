@@ -1,0 +1,125 @@
+.content-10 {
+  padding: 100px 30px;
+
+  @include media-up(l) {
+    padding: 100px 50px;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: $primary-blue;
+
+    .list {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      justify-content: center;
+      width: 100%;
+      margin-bottom: 80px;
+
+      @include media-up(m) {
+        justify-content: space-between;
+        flex-wrap: nowrap;
+      }
+
+      .block {
+        margin: 0 20px 20px 20px;
+        flex: 1;
+        max-width: 200px;
+        min-width: 100px;
+        text-transform: capitalize;
+
+        h4 {
+          margin-bottom: 10px;
+        }
+
+        ul {
+          list-style: none;
+          margin: 0;
+
+          a {
+            text-decoration: none;
+            color: $text-color;
+          }
+        }
+      }
+    }
+
+    .input-text {
+      width: 100%;
+      max-width: 800px;
+      margin: auto;
+
+      .text {
+        max-width: 600px;
+        margin: 0 auto;
+        margin-bottom: 60px;
+
+        h2 {
+          margin-bottom: 15px;
+          text-transform: capitalize;
+          font-weight: normal;
+        }
+
+        p {
+          color: $text-color;
+          margin: 0;
+        }
+      }
+
+      .input {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+
+        @include media-up(m) {
+          flex-direction: row;
+          justify-content: space-between;
+        }
+
+        input {
+          width: 100%;
+          outline: none;
+          border: none;
+          height: 50px;
+          background-color: $background;
+          padding: 0 10px;
+
+          @include media-up(m) {
+            width: 70%;
+          }
+        }
+
+        button {
+          text-transform: uppercase;
+          color: $secondary-blue;
+          padding: 10px 30px;
+          background-color: $primary-blue;
+          border-radius: 2px;
+          transition: 0.5s;
+          border: none;
+          outline: none;
+          margin-top: 20px;
+          height: 50px;
+
+          @include media-up(m) {
+            width: 25%;
+            margin: 0;
+          }
+
+          &:hover {
+            border: 2px solid $border-color;
+            background-color: $secondary-blue;
+            color: $primary-blue;
+          }
+        }
+      }
+    }
+  }
+}

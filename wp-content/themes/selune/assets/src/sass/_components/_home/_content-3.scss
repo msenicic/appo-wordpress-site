@@ -1,0 +1,51 @@
+.content-3 {
+  @include media-up(xl) {
+    display: flex;
+  }
+
+  .background {
+    display: none;
+
+    @include media-up(xl) {
+      display: block;
+      background-color: $primary-blue;
+      width: 40%;
+      height: auto;
+    }
+  }
+
+  .text {
+    background-color: $background;
+    text-align: center;
+    padding: 100px 30px;
+
+    @include media-up(xl) {
+      width: 60%;
+      padding: 100px 0 100px 100px;
+      text-align: left;
+    }
+
+    h2 {
+      max-width: 300px;
+      margin: auto;
+      margin-bottom: 40px;
+      text-transform: capitalize;
+      color: $primary-blue;
+
+      @include media-up(xl) {
+        margin: 0;
+        margin-bottom: 40px;
+      }
+    }
+
+    p {
+      max-width: 500px;
+      margin: auto;
+      color: $text-color;
+
+      @include media-up(xl) {
+        margin: 0;
+      }
+    }
+  }
+}

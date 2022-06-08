@@ -1,0 +1,48 @@
+.content-7 {
+  padding: 100px 30px;
+
+  .container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      object-fit: cover;
+    }
+
+    .text {
+      position: absolute;
+      text-align: center;
+      color: $primary-blue;
+      max-width: 500px;
+      margin: auto;
+
+      h2 {
+        text-transform: capitalize;
+      }
+
+      p {
+        margin: 20px 0 80px 0;
+      }
+
+      .button {
+        a {
+          text-transform: uppercase;
+          color: $secondary-blue;
+          text-decoration: none;
+          padding: 10px 30px;
+          background-color: $primary-blue;
+          border-radius: 5px;
+          transition: 0.5s;
+
+          &:hover {
+            border: 2px solid $border-color;
+            background-color: $secondary-blue;
+            color: $primary-blue;
+          }
+        }
+      }
+    }
+  }
+}

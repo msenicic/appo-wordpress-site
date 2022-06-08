@@ -1,0 +1,45 @@
+footer {
+  padding: 30px;
+  background-color: $primary-blue;
+  z-index: 1000;
+
+  .container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    color: $secondary-blue;
+
+    @include media-up(m) {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .text {
+      margin-bottom: 20px;
+
+      p {
+        margin: 0;
+      }
+
+      @include media-up(m) {
+        margin: 0;
+      }
+    }
+
+    .icons {
+      font-size: 30px;
+
+      a {
+        text-decoration: none;
+        color: $secondary-blue;
+        margin: 0 10px;
+
+        @include media-up(m) {
+          margin: 0;
+          margin-left: 20px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+.content-8 {
+  padding: 100px 30px;
+  background-color: $primary-blue;
+
+  .text {
+    text-align: center;
+    color: $secondary-blue;
+    max-width: 700px;
+    margin: auto;
+
+    p {
+      margin: 0;
+    }
+  }
+}

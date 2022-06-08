@@ -1,0 +1,28 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.site {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  height: 100%;
+  overflow-x: hidden;
+
+  .site-content {
+    flex: 1;
+    margin-top: 89px;
+
+    @include ie {
+      flex-basis: auto;
+    }
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: auto;
+  }
+}
